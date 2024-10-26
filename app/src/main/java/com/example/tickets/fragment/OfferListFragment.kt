@@ -50,12 +50,14 @@ class OfferListFragment : Fragment() {
                     R.id.sort_by_price -> {
                         /**
                          * implement sorting by price
+                         * hint: you can take the current list using getCurrentList method of ListAdapter instance
                          */
                     }
 
                     R.id.sort_by_duration -> {
                         /**
                          * implement sorting by duration
+                         * hint: you can take the current list using getCurrentList method of ListAdapter instance
                          */
                     }
                 }
