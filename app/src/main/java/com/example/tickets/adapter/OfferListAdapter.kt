@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.tickets.R
 import com.example.tickets.databinding.ItemOfferBinding
 import com.example.tickets.model.entity.Offer
+import java.util.Objects
 
 class OfferListAdapter : RecyclerView.Adapter<OfferListAdapter.ViewHolder>() {
 
@@ -14,11 +15,12 @@ class OfferListAdapter : RecyclerView.Adapter<OfferListAdapter.ViewHolder>() {
     fun setItems(offerList: List<Offer>) {
         items.clear()
         items.addAll(offerList)
-        notifyDataSetChanged()
+        OfferItemCallback()
 
         /**
          * hint: think about recycler view optimization using diff.util
          */
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -37,6 +39,9 @@ class OfferListAdapter : RecyclerView.Adapter<OfferListAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(items[position])
+    }
+    fun getCurrentList(): List<Offer> {
+        return items
     }
 
     inner class ViewHolder(
