@@ -6,10 +6,6 @@ Midterm Exam is for Android course Students of KBTU Fall 2024-2025
 
 Use git clone command to fetch the project or use "Get from Version Control..." in Android Studio
 
-```bash
-git clone https://github.com/estharossa/aviatickets.git
-```
-
 ## About project
 
 This project simulates an application for selling air tickets. The application has only one page for issuing tickets.
@@ -31,10 +27,10 @@ Bonus Task: add images of all airlines using Glide. There is already an ImageVie
 
 ## Submission
 
-Deadline: 15:50
+**Deadline: 15:50**
 
-1. Make a local commit of your project before the midterm submission deadline. This commit will serve as the final submission, and any changes made after the midterm evaluation time will not be accepted.
-2. Attend the practical lesson according to the scheduled time for your midterm defense.
+1. Make a local commit of your project before the midterm submission deadline. This commit will serve as the final submission, and **any changes made after the midterm evaluation time will not be accepted**.
+2. Attend the practical lesson according to the scheduled time for your **midterm defense**.
 
 ## License
 
